@@ -1,138 +1,223 @@
-# Simon Mwendwa
+<div align="center">
 
-**Full-Stack Systems Architect** | Trust-Based Financial Infrastructure
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                                                                 │
+│   ███████╗██╗███╗   ███╗ ██████╗ ███╗   ██╗                    │
+│   ██╔════╝██║████╗ ████║██╔═══██╗████╗  ██║                    │
+│   ███████╗██║██╔████╔██║██║   ██║██╔██╗ ██║                    │
+│   ╚════██║██║██║╚██╔╝██║██║   ██║██║╚██╗██║                    │
+│   ███████║██║██║ ╚═╝ ██║╚██████╔╝██║ ╚████║                    │
+│   ╚══════╝╚═╝╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═══╝  MWENDWA          │
+│                                                                 │
+│         AI PLATFORM ENGINEER  ·  DISTRIBUTED SYSTEMS           │
+│              FOUNDER @ SITECHX  ·  NAIROBI, KE                 │
+└─────────────────────────────────────────────────────────────────┘
+```
 
-Architect of production-grade financial systems that transform informal economic activity into cryptographically-verifiable financial history. Specializing in distributed systems, geospatial intelligence, and cryptographic ledger design for emerging markets.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/simon-mwendwa-82b479373)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:simonhackc57@gmail.com)
+![Nairobi, Kenya](https://img.shields.io/badge/Nairobi,_Kenya-00A86B?style=for-the-badge&logo=google-maps&logoColor=white)
+![Open to Work](https://img.shields.io/badge/Open_to_Work-AI_%2F_ML_%2F_Platform_Roles-FF6B35?style=for-the-badge)
+
+</div>
 
 ---
 
-## Core Expertise
+## Who I Am
 
-**Cryptographic Financial Systems**  
-Design and implementation of immutable transaction ledgers using SHA-256 hash chaining, RSA-2048 digital signatures, and Merkle tree verification. Production-grade escrow state machines with atomic transaction guarantees and deterministic state transitions.
+I'm a **Software Engineer** who builds production-grade AI platforms and distributed financial infrastructure. I don't just integrate AI — I architect the systems that make AI reliable, observable, and useful at scale.
 
-**Distributed & Event-Driven Architecture**  
-Event sourcing, CQRS, and transactional outbox patterns for eventual consistency. Kafka-based event streaming with exactly-once semantics. Asynchronous task orchestration using Celery with circuit breakers and idempotency guarantees.
+I'm the **Founder and Lead Engineer of [Sitechx](https://github.com/simonmwendwa317-ui)**, a B2B digital commerce platform serving informal and growing businesses in Kenya — currently in controlled piloting with ~1,000 onboarded users. Beyond Sitechx, I've built a full AI SaaS platform with RAG pipelines, vector search, and streaming LLM responses from the ground up, and contributed to a live AI assistant deployed on [kewasnet.co.ke](https://kewasnet.co.ke).
 
-**Geospatial Intelligence & Analytics**  
-H3 hexagonal grid indexing for O(1) proximity queries and real-time market clustering. PostGIS-optimized spatial queries with sub-10ms response times. Demand heatmaps and geospatial analytics for inventory optimization.
-
-**Backend Systems & API Design**  
-Micro-monolith architecture with Django and FastAPI. Primary-replica database routing, multi-layer caching strategies, and sub-50ms API response times (P95). Production-ready authentication, authorization, and rate limiting.
-
-**Credit Scoring & Risk Modeling**  
-Multi-dimensional credibility scoring algorithms with statistical trend analysis. Explainable AI for credit risk assessment. Time-series modeling for business performance prediction and fraud detection.
+My work sits at the intersection of **AI systems engineering**, **distributed backends**, and **financial infrastructure** — building things that actually run in production, not just notebooks.
 
 ---
 
-## Flagship System: Sitechx
+## What I Build
 
-**Financial Operating System for East Africa's Informal Economy**
+```
+┌────────────────────────────────────────────────────────────────────────────┐
+│                                                                            │
+│   AI SYSTEMS          DISTRIBUTED SYSTEMS         FINANCIAL INFRA          │
+│   ───────────         ──────────────────         ──────────────           │
+│   RAG Pipelines       Event-Driven Arch.          Escrow Engines           │
+│   Vector Search       Transactional Outbox        Hash-Chained Ledgers     │
+│   LLM Integration     Message Queues              M-Pesa Integration       │
+│   Streaming APIs      Background Workers          Multi-Party Settlement   │
+│   Embedding Models    Geospatial Indexing         Idempotent Payments      │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
+```
 
-Sitechx is a production-grade fintech platform that enables 60 million underbanked small businesses to access formal financial services through cryptographic proof of income and transaction history.
+---
 
-**Core Architecture:**
+## Flagship Projects
 
-- **Cryptographic Escrow**: Deterministic state machine with 10 states, optimistic locking, and atomic money movement. Zero fraud risk through cryptographic guarantees rather than institutional trust.
+### 🏗 Sitechx — Escrow Commerce & Financial Infrastructure
+> *Production · ~1,000 Pilot Users · Dec 2024 – Present*
 
-- **Immutable Ledger**: Hash-chained transaction records with SHA-256 and RSA-2048 signatures. Merkle tree verification enables bank-verifiable income proof without third-party intermediaries.
+A B2B digital commerce operating system for informal and growing businesses in Kenya. Connects wholesalers, retailers, and delivery partners through escrow-protected payments, inventory management, and AI-powered market intelligence.
 
-- **H3 Geospatial Engine**: Hexagonal grid indexing reduces proximity search complexity from O(n) to O(1). Real-time market clustering and demand heatmaps for data-driven inventory distribution.
+**What makes it real:**
+- `49,000+` lines of application logic across `60+` relational domain tables
+- `180–220` REST API endpoints supporting multi-role workflows
+- State-machine-driven escrow lifecycle with optimistic locking and timeout recovery
+- SHA-256 hash-chained immutable ledger with Merkle-root verification
+- Hybrid ML credibility scoring (rule-based + scikit-learn classification)
+- Event-driven pipelines using Celery, RabbitMQ, and Kafka
+- PostGIS geospatial discovery with H3 hexagonal indexing
+- Full observability: Prometheus · Grafana · Sentry · Flower
 
-- **Event-Sourced Inventory**: Append-only event log (STOCK_IN, RESERVED, COMMITTED, RELEASED) eliminates race conditions and provides complete audit trails for regulatory compliance.
+```python
+# Escrow state machine — simplified
+ESCROW_STATES = [
+    "CREATED" → "PAYMENT_PENDING" → "HELD" → "RELEASED"
+                                            → "DISPUTED"
+                                            → "REFUNDED"
+]
+```
 
-**Performance & Scale:**
-- API Response Time: <50ms (P95), <10ms for geospatial queries
-- Target Scale: 1M+ users, 100K+ daily transactions
-- Uptime: 99.9% with automated failover
-- Security: Zero-knowledge escrow, cryptographic signatures, Argon2id hashing
+**Stack:** Django · PostgreSQL · PostGIS · Redis · Celery · RabbitMQ · Kafka · scikit-learn · Docker · Prometheus · Grafana
+
+---
+
+###  Full-Stack AI SaaS Platform — Document-Aware Conversational System
+> *RAG · Vector Search · Streaming LLM · 2024–2025*
+
+An end-to-end AI SaaS platform where users can upload documents and have contextual conversations with an AI that retrieves and reasons over their own content.
+
+**Architecture overview:**
+```
+User Upload (PDF/DOCX/TXT)
+        │
+        ▼
+Document Ingestion Pipeline
+        │
+        ▼
+Sentence Transformer Embeddings
+        │
+        ▼
+FAISS Vector Index (per-user isolation)
+        │
+   Query time:
+        │
+        ▼
+Similarity Search → Top-K Chunks → Context Injection
+        │
+        ▼
+Anthropic Claude API → Streaming SSE Response → React UI
+```
+
+**What's under the hood:**
+- Async FastAPI backend with JWT auth and RBAC
+- FAISS vector search with sentence-transformer embeddings
+- Retrieval-Augmented Generation (RAG) with context-aware prompt design
+- Server-Sent Events (SSE) for real-time streaming responses
+- Celery background indexing with Redis coordination
+- Admin analytics: query trends, language breakdowns, AI-generated reports
+- Dockerized deployment with Nginx reverse proxy
+
+**Stack:** FastAPI · React · Vite · PostgreSQL · Redis · FAISS · Sentence Transformers · Anthropic Claude · Celery · Docker · Nginx
+
+---
+
+###  Kewasnet AI Assistant — Live Virtual Assistant
+> *Contributor · Production Deployment · 2025*
+
+Part of a 3-person team that built and deployed an AI assistant live on [kewasnet.co.ke](https://kewasnet.co.ke), providing real-time guidance on water, sanitation, and climate resilience topics in Kenya.
+
+- Designed conversational AI workflows for structured user queries
+- Built backend prompt pipelines and request handling
+- Contributed to production deployment and platform integration
 
 ---
 
 ## Technical Stack
 
-### Backend & APIs
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![Django](https://img.shields.io/badge/Django-092E20?style=flat&logo=django&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
-![DRF](https://img.shields.io/badge/DRF-A30000?style=flat&logo=django&logoColor=white)
+### AI & Machine Learning
+![RAG](https://img.shields.io/badge/RAG-Retrieval--Augmented_Generation-8B5CF6?style=flat-square)
+![FAISS](https://img.shields.io/badge/FAISS-Vector_Search-FF6B6B?style=flat-square)
+![Sentence Transformers](https://img.shields.io/badge/Sentence_Transformers-Embeddings-06B6D4?style=flat-square)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
+![Anthropic](https://img.shields.io/badge/Anthropic_Claude-LLM_Integration-CC785C?style=flat-square)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
+![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white)
 
-### Databases & Data
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white)
-![PostGIS](https://img.shields.io/badge/PostGIS-336791?style=flat&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white)
+### Backend Engineering
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![DRF](https://img.shields.io/badge/Django_REST_Framework-A30000?style=flat-square)
 
-### Distributed Systems
-![Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=flat&logo=apache-kafka&logoColor=white)
-![Celery](https://img.shields.io/badge/Celery-37814A?style=flat&logo=celery&logoColor=white)
-![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=flat&logo=rabbitmq&logoColor=white)
-
-### Security & Cryptography
-![JWT](https://img.shields.io/badge/JWT-000000?style=flat&logo=json-web-tokens&logoColor=white)
-![Cryptography](https://img.shields.io/badge/RSA--2048-4B275F?style=flat&logo=letsencrypt&logoColor=white)
-![Argon2](https://img.shields.io/badge/Argon2id-00599C?style=flat&logo=security&logoColor=white)
+### Distributed Systems & Messaging
+![Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=flat-square&logo=apache-kafka&logoColor=white)
+![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=flat-square&logo=rabbitmq&logoColor=white)
+![Celery](https://img.shields.io/badge/Celery-37814A?style=flat-square)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
 
 ### Frontend
-![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)
-![Redux](https://img.shields.io/badge/Redux-593D88?style=flat&logo=redux&logoColor=white)
-![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)
+![Redux](https://img.shields.io/badge/Redux_Toolkit-593D88?style=flat-square&logo=redux&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+
+### Data & Databases
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white)
+![PostGIS](https://img.shields.io/badge/PostGIS-Geospatial-336791?style=flat-square)
+![SQL](https://img.shields.io/badge/SQL-Advanced-4479A1?style=flat-square)
 
 ### Infrastructure & Observability
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat&logo=prometheus&logoColor=white)
-![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat&logo=grafana&logoColor=white)
-![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-000000?style=flat&logo=opentelemetry&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white)
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
+![Sentry](https://img.shields.io/badge/Sentry-362D59?style=flat-square&logo=sentry&logoColor=white)
 
-### Specialized Technologies
-![H3](https://img.shields.io/badge/H3_Geospatial-1F8ACB?style=flat&logo=uber&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
-
----
-
-## Architectural Differentiators
-
-**Trust via Cryptography**  
-Financial guarantees are enforced through cryptographic hash chaining and digital signatures rather than institutional intermediaries. Every transaction is immutably recorded with SHA-256 hashing and RSA-2048 signatures, creating legally-binding, tamper-proof audit trails.
-
-**O(1) Geospatial Proximity**  
-Traditional radial distance queries scale as O(n) and require expensive spatial calculations. H3 hexagonal indexing reduces proximity search to O(1) indexed lookups, achieving sub-10ms query times for 100K+ entities. This enables real-time market clustering and demand heatmaps.
-
-**Multi-Dimensional Credibility**  
-Custom credit bureau engine that transforms informal transaction history into bank-verifiable creditworthiness. Four-dimensional scoring (Volume, Reliability, Delivery, Disputes) with statistical trend analysis and explainable AI generates AAA-F grades with human-readable justifications.
-
-**Event-Driven Consistency**  
-Event sourcing with CQRS provides both strong consistency guarantees and complete audit trails. Append-only event logs eliminate race conditions in inventory management while enabling regulatory compliance through immutable transaction history.
+### Payments
+![M-Pesa](https://img.shields.io/badge/M--Pesa_API-00A86B?style=flat-square)
 
 ---
 
-## Engineering Practices
+## Core Engineering Principles
 
-**Code Quality & Type Safety**  
-Extensive use of Python type hints and TypeScript for compile-time error detection. Comprehensive docstrings and API documentation. Architecture decision records for major design choices.
+```
+Reliability over features      ─  Systems that fail gracefully are worth more than
+                                  systems that do more things poorly.
 
-**Testing & Reliability**  
-Unit, integration, and end-to-end testing with >80% coverage. Circuit breakers and retry logic for external dependencies. Idempotency guarantees for all write operations.
+Observability from day one     ─  If you can't measure it, you can't trust it
+                                  in production.
 
-**Performance Optimization**  
-Database query optimization with EXPLAIN ANALYZE and strategic indexing. Multi-layer caching with Redis. Asynchronous processing for heavy operations. Primary-replica routing for read scalability.
+Data integrity above all       ─  Especially in financial systems — optimistic
+                                  locking, idempotency, and immutability are
+                                  non-negotiable.
 
-**Security & Compliance**  
-JWT authentication with refresh tokens. Role-based access control with granular permissions. Encryption at rest and TLS in transit. Complete audit logging for all financial operations. Regulatory-ready transaction immutability.
-
----
-
-## Professional Focus
-
-- Financial inclusion and emerging market fintech
-- Cryptographic systems and distributed ledger technology
-- Geospatial analytics and location intelligence
-- Event-driven architecture and distributed systems
-- Credit scoring and risk modeling for underbanked populations
+AI as infrastructure           ─  LLMs are components, not magic. RAG, retrieval
+                                  quality, and evaluation pipelines matter more
+                                  than the model itself.
+```
 
 ---
 
-**Location:** Nairobi, Kenya  
-**Availability:** Open to consulting, technical advisory, and principal-level engineering roles in fintech, distributed systems, and financial infrastructure.
+## Currently
 
-Specializing in systems that bridge the gap between informal economies and formal financial institutions through cryptographic guarantees, geospatial intelligence, and event-driven architecture.
+-  Scaling Sitechx through controlled piloting toward full market launch
+-  Deepening expertise in RAG evaluation, retrieval optimization, and AI observability
+-  Open to AI Platform Engineer, ML Engineer, and Backend AI roles
+
+---
+
+## Let's Talk
+
+If you're building AI systems, financial infrastructure, or distributed platforms — especially for emerging markets — I'd like to connect.
+
+[![LinkedIn](https://img.shields.io/badge/Connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/simon-mwendwa-82b479373)
+[![Email](https://img.shields.io/badge/Send_an_Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:simonhackc57@gmail.com)
+
+---
+
+<div align="center">
+
+*Building systems that work in the real world — not just in demos.*
+
+</div>
