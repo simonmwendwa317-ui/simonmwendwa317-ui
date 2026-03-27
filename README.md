@@ -55,7 +55,7 @@ My work sits at the intersection of **AI systems engineering**, **distributed ba
 ## Flagship Projects
 
 ### 🏗 Sitechx — Escrow Commerce & Financial Infrastructure
-> *Production · ~1,000 Pilot Users · Dec 2024 – Present*
+> *Production · ~1,000 Pilot Users · Dec 2025 – Present*
 
 A B2B digital commerce operating system for informal and growing businesses in Kenya. Connects wholesalers, retailers, and delivery partners through escrow-protected payments, inventory management, and AI-powered market intelligence.
 
